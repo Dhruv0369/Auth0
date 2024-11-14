@@ -1,5 +1,5 @@
 import './App.css'
-import Theme from './components/theme'
+import Theme from './components/Theme'
 
 function App() {
 
