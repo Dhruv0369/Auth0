@@ -50,7 +50,7 @@ const Theme = () => {
                     </div> */}
                     <div className="nav__actions">
 
-                    {isAuthenticated &&  <i onClick={handleProfile} className="ri-user-line nav__login" id="login-box" /> }
+                        {isAuthenticated && <i onClick={handleProfile} className="ri-user-line nav__login" id="login-box" />}
 
                         {isAuthenticated && showProfile && (
                             <>
@@ -75,10 +75,7 @@ const Theme = () => {
 
             {/*==================== MAIN ====================*/}
             <main className="main">
-            {isAuthenticated
-                ?null
-                :<img src={BackGround} alt="image" className="main__bg" />
-                }
+                <img src={BackGround} alt="image" className="main__bg" />
             </main>
         </>
     )
