@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import BackGround from '../img/bg-image.png'
 import { useAuth0 } from "@auth0/auth0-react";
-// import Home from './home';
 
 const Theme = () => {
     const { user, loginWithRedirect, isAuthenticated, logout } = useAuth0();
@@ -76,8 +75,10 @@ const Theme = () => {
 
             {/*==================== MAIN ====================*/}
             <main className="main">
-                <img src={BackGround} alt="image" className="main__bg" />
-                {/* <Home user={user}/> */}
+            {isAuthenticated
+                ?null
+                :<img src={BackGround} alt="image" className="main__bg" />
+                }
             </main>
         </>
     )
